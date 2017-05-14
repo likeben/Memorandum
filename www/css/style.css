@@ -1,0 +1,200 @@
+.memorandum {
+    width: 960px;
+    height: auto;
+    margin: 0 auto;
+    font-family: 'Microsoft YaHei' !important;
+}
+
+/*LOGO栏*/
+.banner {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 40px;
+}
+
+/*搜索框*/
+.search {
+    width: 958px;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 0;
+    background: #fff;
+}
+.search .logo {
+    float: left;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+}
+.search .logo img{
+    /*height: 40px;*/
+}
+.search .box {
+    float: left;
+}
+.search .box input[type=text] {
+    height: 42px;
+    width: 550px;
+    border: 1px solid #B37052;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline: 0;
+    float: left;
+    text-indent: 2em;
+}
+.search .box input[type=submit] {
+    height: 44px;
+    width: 100px;
+    border: 0;
+    outline: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #9F825D;
+    float: left;
+    color: #fff;
+    font-size: 24px;
+}
+
+/*任务列表*/
+.panel {
+    width: 100%;
+    height: auto;
+}
+.panel ul[role="tablist"] {
+    background-color: #F4F9D1;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    background: #CC8361 !important;
+    border: transparent !important;
+}
+.panel p {
+    width: 100%;
+    line-height: 36px;
+    border-bottom: 1px dashed #ccc;
+}
+.panel p input {
+    margin: 0 5px;
+}
+.panel p a {
+    float: right;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.panel p a:nth-of-type(1) {
+    color: red;
+}
+.panel p a:nth-of-type(2) {
+    color: blueviolet;
+}
+.panel .detailBtn {
+    color: #A08667 !important;
+}
+
+/*返回顶部按钮*/
+.back {
+    width: 36px;
+    height: 65px;
+    background: url("../images/Top.jpg") no-repeat;
+    display: none;
+    cursor: pointer;
+
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+/* 详情蒙版窗口 */
+.mask {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /*display: none;*/
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.mask .detail {
+    width: 400px;
+    height: 300px;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin-left: -200px;
+    margin-top: -150px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.mask .detail .detail-content p{
+    line-height: 40px;
+    overflow: hidden;
+}
+.mask .detail .detail-content p span:first-of-type {
+    color: darkgrey;
+    font-weight: bold;
+}
+.mask .detail .detail-content p span:nth-of-type(2) {
+    cursor: pointer;
+}
+.mask .detail .detail-content textarea {
+    width: 380px;
+    height: 100px;
+    border: 1px solid #B37052;
+    box-sizing: border-box;
+    outline: none;
+    background: #ddd;
+}
+.mask .detail .detail-time p {
+    line-height: 30px;
+}
+.mask .detail .detail-time input {
+    border: 0;
+    outline: 0;
+    width: 380px;
+    height: 30px;
+    background: #ddd;
+}
+.mask .detail .update {
+    text-align: right;
+    margin-top: 10px;
+}
+.mask .detail .update button {
+    width: 90px;
+    height: 30px;
+    border: 0;
+    outline: 0;
+    background: #9F825D;
+    color: #fff;
+    font-size: 20px;
+}
+
+/* 提醒弹框 */
+.remind {
+    width: 100%;
+    height: auto;
+    display: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.remind p {
+    width: 100%;
+    line-height: 30px;
+    text-align: center;
+    background: orangered;
+    opacity: 0.8;
+    color: #0e0e0e;
+}
+
+/*吸顶特效*/
+.ceiling {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-left: -479px;
+    z-index: 999;
+}
