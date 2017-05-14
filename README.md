@@ -8,5 +8,5 @@ cd Memorandum/
 
 node app.js
 
-open localhost:8080 in browser or https://localhost:8001
+open localhost:8080 or https://localhost:8001 in browser
 ```
